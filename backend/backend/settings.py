@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ "127.0.0.1",
+    "localhost",
+    ".vercel.app",]
 
 
 # Application definition
@@ -145,8 +147,9 @@ MAILERS = {
 # CORS configuration
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://127.0.0.1:3000',
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://placement-pro-virid.vercel.app",
 ]
 
 
